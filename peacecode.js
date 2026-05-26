@@ -340,9 +340,6 @@ function isLochNessMonster(s) {
   if (s.includes("three fifty")) return true;
   return false;
 }
-*/
-
-let string = "Jędrzej Błądziński";
 
 function correctPolishLetters(string) {
   let result = [];
@@ -368,6 +365,16 @@ function correctPolishLetters(string) {
   }
   return result.join("");
 }
+*/
 
-const result = correctPolishLetters(string);
+let formData = "<h2>Hello World</h2>";
+
+function htmlspecialchars(formData) {
+  for (let i = 0; i < formData.split("").length; i++) {
+    if (formData[i] === "<") formData[i] = "&lt;";
+  }
+  console.log(formData);
+}
+
+const result = htmlspecialchars(formData);
 console.log(result);
