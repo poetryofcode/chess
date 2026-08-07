@@ -365,7 +365,6 @@ function correctPolishLetters(string) {
   }
   return result.join("");
 }
-*/
 
 let formData = "<h2>Hello World</h2>";
 
@@ -376,5 +375,17 @@ function htmlspecialchars(formData) {
   console.log(formData);
 }
 
-const result = htmlspecialchars(formData);
+*/
+
+let a = "This is an example!";
+
+function reverseWords(str) {
+  let arrOfWords = str.split(" ");
+  for (let i = 0; i < arrOfWords.length; i++) {
+    arrOfWords[i].reverse();
+  }
+  return arrOfWords;
+}
+
+const result = reverseWords(a);
 console.log(result);
