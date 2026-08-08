@@ -380,11 +380,15 @@ function htmlspecialchars(formData) {
 let a = "This is an example!";
 
 function reverseWords(str) {
+  let reverseWords = "";
   let arrOfWords = str.split(" ");
   for (let i = 0; i < arrOfWords.length; i++) {
-    arrOfWords[i].reverse();
+    for (let j = arrOfWords[i].length - 1; j >= 0; j--) {
+      reverseWords += arrOfWords[i][j];
+    }
+    if (i < arrOfWords.length) reverseWords += " ";
   }
-  return arrOfWords;
+  return reverseWords;
 }
 
 const result = reverseWords(a);
