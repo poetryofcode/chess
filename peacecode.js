@@ -375,7 +375,6 @@ function htmlspecialchars(formData) {
   console.log(formData);
 }
 
-*/
 
 let a = "This is an example!";
 
@@ -386,10 +385,18 @@ function reverseWords(str) {
     for (let j = arrOfWords[i].length - 1; j >= 0; j--) {
       reverseWords += arrOfWords[i][j];
     }
-    if (i < arrOfWords.length) reverseWords += " ";
+    if (i < arrOfWords.length - 1) reverseWords += " ";
   }
   return reverseWords;
 }
 
-const result = reverseWords(a);
+*/
+
+let a = [1, 2, "a", "b"];
+
+function filter_list(l) {
+  return l.filter((value) => !isNaN(value));
+}
+
+const result = filter_list(a);
 console.log(result);
