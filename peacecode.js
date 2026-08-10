@@ -392,10 +392,10 @@ function reverseWords(str) {
 
 */
 
-let a = [1, 2, "a", "b"];
+let a = [1, 2, "aasf", "1", "123", 123];
 
 function filter_list(l) {
-  return l.filter((value) => !isNaN(value));
+  return l.filter((value) => value === parseInt(value));
 }
 
 const result = filter_list(a);
