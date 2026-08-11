@@ -395,7 +395,7 @@ function reverseWords(str) {
 let a = [1, 2, "aasf", "1", "123", 123];
 
 function filter_list(l) {
-  return l.filter((value) => value === parseInt(value));
+  return l.filter((value) => typeof value === "number");
 }
 
 const result = filter_list(a);
