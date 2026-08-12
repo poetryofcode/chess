@@ -390,7 +390,6 @@ function reverseWords(str) {
   return reverseWords;
 }
 
-*/
 
 let a = [1, 2, "aasf", "1", "123", 123];
 
@@ -398,5 +397,13 @@ function filter_list(l) {
   return l.filter((value) => typeof value === "number");
 }
 
-const result = filter_list(a);
+*/
+
+var firstName = { A: "Alpha", B: "Beta", C: "Cache" };
+var surname = { A: "Analogue", B: "Bomb", C: "Catalyst" };
+
+function aliasGen(first, last) {
+  // Code Here
+}
+const result = aliasGen(first, last);
 console.log(result);
