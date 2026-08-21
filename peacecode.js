@@ -402,6 +402,8 @@ function filter_list(l) {
 var firstName = { A: "Alpha", B: "Beta", C: "Cache" };
 var surname = { A: "Analogue", B: "Bomb", C: "Catalyst" };
 
-function aliasGen(first, last) {}
+function aliasGen(first, last) {
+  return first + last;
+}
 const result = aliasGen(first, last);
 console.log(result);
