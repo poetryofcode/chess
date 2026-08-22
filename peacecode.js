@@ -397,13 +397,31 @@ function filter_list(l) {
   return l.filter((value) => typeof value === "number");
 }
 
+
+let a = "auoie";
+
+function getCount(str) {
+  let count = 0;
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === "i") count++;
+    else if (str[i] === "o") count++;
+    else if (str[i] === "u") count++;
+    else if (str[i] === "a") count++;
+    else if (str[i] === "e") count++;
+  }
+  
+  return count;
+}
+
 */
 
-var firstName = { A: "Alpha", B: "Beta", C: "Cache" };
-var surname = { A: "Analogue", B: "Bomb", C: "Catalyst" };
+let str = "1 2 3 4 5";
 
-function aliasGen(first, last) {
-  return first + last;
+function highAndLow(numbers) {
+  let a = Math.max(Number(numbers));
+  console.log(a);
 }
-const result = aliasGen(first, last);
+
+const result = highAndLow(str);
 console.log(result);
